@@ -18,8 +18,10 @@ And look. Somebody will say it's too basic. Somebody else will get lost. My inte
 3. Serve web pages locally
 4. Create a web server
 5. Deploy the app
-6. Add styling to the html
-7. Extract stuff to new files
+
+>(Fun with Clojure to come later, maybe)<br>
+> 6. Add styling to the html<br>
+> 7. Extract stuff to new files
 
 ### 0. Setup
 
@@ -63,7 +65,7 @@ Go to Github in your browser. Create a repo. Get the *url_for_your_repo*
 ### 3. Serve web pages locally
 
 [Ring](https://github.com/ring-clojure/ring) is what lets you talk to the web without a huge hassle. It's our only dependency. No fancy frameworks for this learning project. Leiningen is going to download your dependencies for you, so you don't need to install or anything. 
-
+jj
 Open *project.clj* in your favorite editor to add the Ring dependency. Find the (defproject ...) function, and add:
 
 `:dependencies [[ring/ring-core "x.x.x"]]` where *x.x.x* is the current version (Today it's "1.4.0"). If there's already a dependency, just add the ring part.
@@ -97,6 +99,69 @@ You did it. Now run
 `lein ring server`
 
 **Check for success:** If it doesn't open a browser for you, the terminal window will tell you "started on port xxxx" (mine is 3000). Browse to localhost:3000 (or whatever) and you should see your Hello, World.
+
+###4. Create a web server!
+I thought this would be scary. But Jason said it was worth learning, instead of using hosting that does this part for you. I did it, so you can do it.
+
+These instructions use Digital Ocean. It's easy to sign up. What you get is the ability to spin up a server that basically behaves like a linux box somewhere. Maybe it is. I dunno. (Here are some [basic linux commands](http://www.comptechdoc.org/os/linux/usersguide/linux_ugbasics.html) like how to change directories.) 
+
+If it's your first time using Digital Ocean, you'll need to give it your public ssh key. If you have one from using Github, you'll find it ~/.ssh/id_rsa.pub. Or you can Google for how to make a new one.
+
+Now create a "droplet" (that's the linux box). The only options you need to choose are 1. Ubuntu and 2. that it should use your ssh key.
+
+Once you've done that, get the *ip_address* for your new server.
+
+`$ ssh root@ip_address` (Note, replace *ip_address* with the IP address.)
+
+**Checkpoint:** You're in! Right?
+
+`$ apt search tomcat`
+
+Today, the most recent is tomcat7
+
+`$ apt-get install tomcat7`
+
+**Checkpoint:** In your browser, go to the *ip_address*. You should see some kind of default page there.
+
+But we don't want to have to specify :8080. Here's how you change that.
+
+```
+$ apt-get install authbind
+$ touch /etc/authbind/byport/80
+$ chmod 500 /etc/authbind/byport/80
+$ chown tomcat7 /etc/authbind/byport/80
+```
+
+(If you don't know what *touch*, *chmod* & *chown* are, now would be a good time to Google them.)
+
+Now edit */etc/default/tomcat7* and find where it says `set authbind=`. Set it to YES.
+And edit */etc/tomcat7/server.xml*. See where it says <Connector port=8080> or some such? Change that to 80. 80 is the default port. 
+
+My notes at this point say "This might come in handy."
+`$ service tomcat7 restart
+
+I'm guessing I meant that this is a good time to restart tomcat.
+
+So now...
+
+**Check for success:** View the default page at your IP address, without specifying a port.
+
+###5. Deploy your app
+
+`$ ssh root@ip_address`
+
+Remove the directory */var/lib/tomcat7/webapps/ROOT*
+
+`$ exit` (back on your own machine now)
+
+`$ lein ring uberwar`
+
+It will tell you what it created and where. I'm calling it path/something-STANDALONE.war. Replace that with your info.
+
+`$ scp path/something-STANDALONE.war root@ip_address:/var/lib/tomcat7/webapps/ROOT.war`
+
+**Check for success:** View your "Hello, World" on the web at your IP address.
+
 
 ## License
 
