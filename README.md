@@ -12,12 +12,14 @@ And look. Somebody will say it's too basic. Somebody else will get lost. My inte
 
 ## The steps
 
+```
 0. Setup
 1. Create a new project
 2. Put it in Github
 3. Serve web pages locally
 4. Create a web server
 5. Deploy the app
+```
 
 >(Fun with Clojure to come later, maybe)<br>
 > 6. Add styling to the html<br>
