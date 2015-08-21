@@ -12,14 +12,12 @@ And look. Somebody will say it's too basic. Somebody else will get lost. My inte
 
 ## The steps
 
-
 1. Setup
 2. Create a new project
 3. Put it in Github
 4. Serve web pages locally
 5. Create a web server
 6. Deploy the app
-
 
 >(Fun with Clojure to come later, maybe)<br>
 > 7. Add styling to the html<br>
