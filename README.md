@@ -63,10 +63,12 @@ Go to Github in your browser. Create a repo. Get the *url_for_your_repo*
 ### 4. Serve web pages locally
 
 [Ring](https://github.com/ring-clojure/ring) is what lets you talk to the web without a huge hassle. It's our only dependency. No fancy frameworks for this learning project. Leiningen is going to download your dependencies for you, so you don't need to install or anything. 
-jj
-Open *project.clj* in your favorite editor to add the Ring dependency. Find the (defproject ...) function, and add:
+
+Open *project.clj* in your favorite editor to add the Ring dependency. Find the (defproject ...) function\*, and add:
 
 `:dependencies [[ring/ring-core "x.x.x"]]` where *x.x.x* is the current version (Today it's "1.4.0"). If there's already a dependency, just add the ring part.
+
+(\* Jason says this is a "form", not a "function", which is surely important. But I left the word function because if you're new to Clojure, it might help. Or not. I dunno.)
 
 Also add the *[lein-ring](https://github.com/weavejester/lein-ring)* plugin.
 
@@ -132,11 +134,12 @@ $ chown tomcat7 /etc/authbind/byport/80
 
 (If you don't know what *touch*, *chmod* & *chown* are, now would be a good time to Google them.)
 
-Now edit */etc/default/tomcat7* and find where it says `set authbind=`. Set it to YES.
+Now edit */etc/default/tomcat7* and find where it says `AUTHBIND=`. Set it to YES.
 And edit */etc/tomcat7/server.xml*. See where it says <Connector port=8080> or some such? Change that to 80. 80 is the default port. 
 
 My notes at this point say "This might come in handy."
-`$ service tomcat7 restart
+
+`$ service tomcat7 restart`
 
 I'm guessing I meant that this is a good time to restart tomcat.
 
