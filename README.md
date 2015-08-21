@@ -12,26 +12,26 @@ And look. Somebody will say it's too basic. Somebody else will get lost. My inte
 
 ## The steps
 
-```
+
 0. Setup
 1. Create a new project
 2. Put it in Github
 3. Serve web pages locally
 4. Create a web server
 5. Deploy the app
-```
+
 
 >(Fun with Clojure to come later, maybe)<br>
 > 6. Add styling to the html<br>
 > 7. Extract stuff to new files
 
-### 0. Setup
+### 1. Setup
 
 You'll need Java and Leiningen installed. (Clojure comes with Leiningen, I'm told.) I didn't do this step recently, so I'm not going to provide instructions for it. Use the Google, ask your Clojure friend, or ask me.
 
 Also, I'm on a Mac. If you're not, YMMV.
 
-### 1. Create a new project
+### 2. Create a new project
 
 In the directory where you put projects, do this:
 
@@ -46,7 +46,7 @@ $ cd project_name
 
 **Check for success:** you run `lein test` and you see a failing test. (Leiningen comes with one.)
 
-### 2. Put it in Github
+### 3. Put it in Github
 
 This is a reminder of the steps, but it assumes you have a Github account and know basically how to use it.
 
@@ -64,7 +64,7 @@ Go to Github in your browser. Create a repo. Get the *url_for_your_repo*
 
 **Check for success:** See your stuff on Github.
 
-### 3. Serve web pages locally
+### 4. Serve web pages locally
 
 [Ring](https://github.com/ring-clojure/ring) is what lets you talk to the web without a huge hassle. It's our only dependency. No fancy frameworks for this learning project. Leiningen is going to download your dependencies for you, so you don't need to install or anything. 
 jj
@@ -102,7 +102,7 @@ You did it. Now run
 
 **Check for success:** If it doesn't open a browser for you, the terminal window will tell you "started on port xxxx" (mine is 3000). Browse to localhost:3000 (or whatever) and you should see your Hello, World.
 
-###4. Create a web server!
+### 5. Create a web server!
 I thought this would be scary. But Jason said it was worth learning, instead of using hosting that does this part for you. I did it, so you can do it.
 
 These instructions use Digital Ocean. It's easy to sign up. What you get is the ability to spin up a server that basically behaves like a linux box somewhere. Maybe it is. I dunno. (Here are some [basic linux commands](http://www.comptechdoc.org/os/linux/usersguide/linux_ugbasics.html) like how to change directories.) 
@@ -148,7 +148,7 @@ So now...
 
 **Check for success:** View the default page at your IP address, without specifying a port.
 
-###5. Deploy your app
+### 6. Deploy your app
 
 `$ ssh root@ip_address`
 
