@@ -13,18 +13,17 @@ And look. Somebody will say it's too basic. Somebody else will get lost. My inte
 ## The steps
 
 
-0. Setup
-1. Create a new project
-2. Put it in Github
-3. Serve web pages locally
-4. Create a web server
-5. Deploy the app
+1. Setup
+2. Create a new project
+3. Put it in Github
+4. Serve web pages locally
+5. Create a web server
+6. Deploy the app
 
 
 >(Fun with Clojure to come later, maybe)<br>
-> 6. Add styling to the html<br>
-> 7. Extract stuff to new files
-
+> 7. Add styling to the html<br>
+> 8. Extract stuff to new files 
 ### 1. Setup
 
 You'll need Java and Leiningen installed. (Clojure comes with Leiningen, I'm told.) I didn't do this step recently, so I'm not going to provide instructions for it. Use the Google, ask your Clojure friend, or ask me.
