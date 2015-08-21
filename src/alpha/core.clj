@@ -3,21 +3,19 @@
 
 (def hello-response  
   {:headers {"content-type" "text/html"}
-   :body 
-  (slurp (io/resource "hello.html"))})
+   :body (slurp (io/resource "hello.html"))})
 
 (def no-such-page-response
   {:status 404
    :headers {"content-type" "text/html"}
-   :body 
-  (slurp (io/resource "404.html"))})
+   :body (slurp (io/resource "404.html"))})
 
 (def silly-response
   {:body "Foo? Okaaaaaay."})
 
 (def css-response
       {:headers {"content-type" "text/css"}
-       :body "p {color: red;} .sad {color: blue;}"})
+       :body (slurp (io/resource "style.css"))})
 
 (defn app
   "This is a learning app"
