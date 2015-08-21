@@ -1,4 +1,5 @@
-(ns alpha.core)
+(ns alpha.core
+  (:require [clojure.java.io :as io]))
 
 (def hello-response  
       {:headers {"content-type" "text/html"}
@@ -13,11 +14,8 @@
       {:status 404
        :headers {"content-type" "text/html"}
        :body 
-        "<!DOCTYPE html>
-        <html>
-        <head><link href=\"style.css\" rel=\"stylesheet\"></head>
-        <body><p class=\"sad\">You've missed the boat.</p></body>
-        </html>"})
+      (slurp (io/resource "404.html"))})
+
 (def silly-response
       {:body "Foo? Okaaaaaay."})
 
