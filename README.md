@@ -2,11 +2,9 @@
 An app for learning how a Clojure web app works. Actually, I wanted to learn how any web app works. I'm also a beginner at Clojure. So, that's fun. :-)
 
 ## What?
-This is Alex. I have help from Jason. 
+This is Alex. I have help from Jason. He knows all the things. I intend this as a kata &mdash; for me &mdash; to repeat until it's second nature.
 
-I intend this as a kata &mdash; for me &mdash; to repeat until it's second nature.
-
-I'll describe the steps as best I can. If you decide to follow these steps, and you get stuck, I'll try and help. You'll find me on twitter and on the gmails as onealexharms.
+I'll describe the steps as best I can. If you decide to follow these steps, and you get stuck, I'll try and help. You'll find us at [@hellomaitria](twitter.com/hellomaitria) or [alex@maitria.com](mailto:alex@maitria.com).
 
 And look. Somebody will say it's too basic. Somebody else will get lost. My intent was to make it as accessible as possible. If it's too slow/easy for you, go read some docs. <3
 
