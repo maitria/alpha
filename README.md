@@ -170,4 +170,4 @@ It will tell you what it created and where. I'm calling it path/something-STANDA
 
 Copyright © 2015 Maitria
 
-License: You can use this to learn along with me! You can also share and modify (eg. fork) it. You agree we're not liable if you are harmed somehow by your use of this. You agree not to sell it or use it in your profit-making endeavor without permission. And you agree not to do anything with it that you could reasonably anticipate would cause harm to us or Maitria. That's all I got.
+License: You can use this to learn along with me! You can also share and modify (eg. fork) it. You agree we're not liable if you are harmed somehow by your use of this. You agree not to sell it or use it in your profit-making endeavor without permission. And you agree not to do anything with it that would cause harm to us or Maitria. That's all I got.
