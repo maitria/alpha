@@ -136,8 +136,8 @@ $ chown tomcat7 /etc/authbind/byport/80
 
 (If you don't know what *touch*, *chmod* & *chown* are, now would be a good time to Google them.)
 
-Now edit */etc/default/tomcat7* and find where it says `AUTHBIND=`. Set it to YES.
-And edit */etc/tomcat7/server.xml*. See where it says <Connector port=8080> or some such? Change that to 80. 80 is the default port. 
+Now edit */etc/default/tomcat7* and find where it says `AUTHBIND=`. Uncomment it and set it to YES.
+And edit */etc/tomcat7/server.xml*. See where it says \<Connector port=8080\> or some such? Change that to 80. 80 is the default port.
 
 My notes at this point say "This might come in handy."
 
