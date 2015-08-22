@@ -74,7 +74,7 @@ Open *project.clj* in your favorite editor to add the Ring dependency. Find the 
 
 Also add the *[lein-ring](https://github.com/weavejester/lein-ring)* plugin.
 
-`:dependencies [[lein-ring "x.x.x"]]` (Today the version is "0.9.6")
+`:plugins [[lein-ring "x.x.x"]]` (Today the version is "0.9.6")
 
 **Checkpoint** Check how that went by doing
 
@@ -92,11 +92,11 @@ From your *project_name* directory, you'll find *core.clj* in *src/project_name*
   {:body "Hello, World."})
 ```
 
-Now edit *core.clj* again, to tell ring what we named our page-handler. Add a line to (defproject ...)
+Now edit *project.clj* again, to tell ring what we named our page-handler. Add a line to (defproject ...)
 
 `:ring {:handler project-name.core/page-handler}`
 
-You did it. Now run 
+You did it. Now run
 
 `lein ring server`
 
@@ -136,8 +136,8 @@ $ chown tomcat7 /etc/authbind/byport/80
 
 (If you don't know what *touch*, *chmod* & *chown* are, now would be a good time to Google them.)
 
-Now edit */etc/default/tomcat7* and find where it says `AUTHBIND=`. Set it to YES.
-And edit */etc/tomcat7/server.xml*. See where it says <Connector port=8080> or some such? Change that to 80. 80 is the default port. 
+Now edit */etc/default/tomcat7* and find where it says `AUTHBIND=`. Uncomment it and set it to YES.
+And edit */etc/tomcat7/server.xml*. See where it says \<Connector port=8080\> or some such? Change that to 80. 80 is the default port.
 
 My notes at this point say "This might come in handy."
 
