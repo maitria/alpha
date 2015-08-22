@@ -40,7 +40,7 @@ $ cd project_name
 
 (You can call it *project_name* if you want. I'm figuring you'll pick something else.)
 
-**Check for success:** you run `lein test` and you see a failing test. (Leiningen comes with one.)
+**Check for success:** Run `$ lein test`. You should see a failing test. (Leiningen comes with one.)
 
 ### 3. Put it in Github
 
@@ -55,8 +55,10 @@ $ git commit -m "Initial commit"
 ```
 Go to Github in your browser. Create a repo. Get the *url_for_your_repo*
 
-`$ git remote add origin url_for_your_repo
-`$ git push -u origin master
+```
+$ git remote add origin url_for_your_repo
+$ git push -u origin master
+```
 
 **Check for success:** See your stuff on Github.
 
@@ -74,11 +76,11 @@ Also add the *[lein-ring](https://github.com/weavejester/lein-ring)* plugin.
 
 `:dependencies [[lein-ring "x.x.x"]]` (Today the version is "0.9.6")
 
-Check how that went by doing
+**Checkpoint** Check how that went by doing
 
 `$ lein deps`
 
-This downloads dependencies. It's optional, because that happens all the time, but it will tell you if you're okay so far. If things are whack, and you're new to Clojure like me, go squint at your parentheses and your curly braces. That's probably it.
+This downloads dependencies. It's optional, because that happens all the time, but it will tell you if you're okay so far. **If things are whack**, and you're new to Clojure like me, go squint at your parentheses and your curly braces. That's probably it.
 
 Now you get to edit *core.clj* to give it a **page handler**. This is the key to happiness. It's the function that will respond to requests from a browser to serve a web page. (Ring receives the request from a browser, and uses the page handler you specify to figure out what to give the browser in response.)
 
