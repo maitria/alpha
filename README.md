@@ -1,8 +1,8 @@
 # alpha
-An app for learning how a Clojure web app works. Actually, I wanted to learn how any web app works. I'm also a beginner at Clojure. So, that's fun. :-)
+A place for people new to Clojure and new to web apps to learn how Clojure web apps work. I made it &mdash; with much help from @eraserhd/Jason &mdash; because I wanted to really get it. But I like to share. So.
 
 ## What?
-This is Alex. I have help from Jason. He knows all the things. I intend this as a kata &mdash; for me &mdash; to repeat until it's second nature.
+I intend this as a kata &mdash; for me &mdash; to repeat until it's second nature. You play how you want. :)
 
 I'll describe the steps as best I can. If you decide to follow these steps, and you get stuck, I'll try and help. You'll find us at [@hellomaitria](twitter.com/hellomaitria) or [alex@maitria.com](mailto:alex@maitria.com).
 
