@@ -123,7 +123,7 @@ Today, the most recent is tomcat7
 
 `$ apt-get install tomcat7`
 
-**Checkpoint:** In your browser, go to the *ip_address*. You should see some kind of default page there.
+**Checkpoint:** In your browser, go to the http://*ip_address*:8080/. You should see some kind of default page there.
 
 But we don't want to have to specify :8080. Here's how you change that.
 
