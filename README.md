@@ -10,7 +10,7 @@ And look. Somebody will say it's too basic. Somebody else will get lost. My inte
 
 ## The steps
 
-1. Setup - Installing Java & Clojure
+1. Setup - Installing Java, Clojure, & Leiningen
 2. Create a new project
 3. Put it in Github
 4. Serve web pages locally
@@ -21,7 +21,7 @@ And look. Somebody will say it's too basic. Somebody else will get lost. My inte
 > 7. Add styling to the html<br>
 > 8. Extract stuff to new files 
 
-### 1. Setup - Installing Java & Clojure
+### 1. Setup
 
 #### Java
 Install Java (JDK, not JRE) from here: http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html#javasejdk
@@ -30,6 +30,12 @@ Install Java (JDK, not JRE) from here: http://www.oracle.com/technetwork/java/ja
 
 #### Clojure
 Instructions for installing Clojure are here: http://clojure.org/guides/getting_started
+
+#### Leiningen
+
+Four steps for installing leiningen are at http://leiningen.org
+
+*Don't forget, if you get stuck, it's not you, it's the instructions. Ask for help if you need it.*
 
 ### 2. Create a new project
 
