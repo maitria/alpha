@@ -1,5 +1,5 @@
 # alpha
-A place for people new to Clojure and new to web apps to learn how Clojure web apps work. I  &mdash; @onealexharms &mdash; made it &mdash; with much help from @eraserhd/Jason &mdash; because I wanted to really get it. But I like to share. So.
+A place for people new to Clojure and new to web apps to learn how Clojure web apps work. I  &mdash; Alex &mdash; made it &mdash; with much help from Jason &mdash; because I wanted to really get it. But I like to share. So.
 
 ## What?
 I intend this as a kata &mdash; for me &mdash; to repeat until it's second nature. You play how you want. :)
