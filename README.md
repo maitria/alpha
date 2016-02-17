@@ -10,7 +10,7 @@ And look. Somebody will say it's too basic. Somebody else will get lost. My inte
 
 ## The steps
 
-1. Setup
+1. Setup - Installing Java & Clojure
 2. Create a new project
 3. Put it in Github
 4. Serve web pages locally
