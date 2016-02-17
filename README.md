@@ -21,11 +21,15 @@ And look. Somebody will say it's too basic. Somebody else will get lost. My inte
 > 7. Add styling to the html<br>
 > 8. Extract stuff to new files 
 
-### 1. Setup
+### 1. Setup - Installing Java & Clojure
 
-You'll need Java and Leiningen installed. (Clojure comes with Leiningen, I'm told.) I didn't do this step recently, so I'm not going to provide instructions for it. Use the Google, ask your Clojure friend, or ask me.
+#### Java
+Install Java (JDK, not JRE) from here: http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html#javasejdk
 
-Also, I'm on a Mac. If you're not, YMMV.
+(JDK is the development kid. JRE is the runtime environment. If that doesn't make sense, ignore it.)
+
+#### Clojure
+Instructions for installing Clojure are here: http://clojure.org/guides/getting_started
 
 ### 2. Create a new project
 
